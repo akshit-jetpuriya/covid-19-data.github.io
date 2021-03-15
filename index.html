@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 data</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="stats()">
+    <header>
+        <nav>
+            <section>
+                <div class="nav">
+                    <div class="heading">
+                        <span class="text-25">COVID-19</span>
+                        <span class="show-nav right">
+                            <span class="right rotate-slash">|</span>
+                            <span class="right rotate-slash my2">|</span>
+                            <span class="right my10 rotate-slash">|</span>
+                        </span>
+                    </div>
+                    <div class="hidden-nav">
+                        <ul>
+                            <div class="list-items">
+                                <li><a class="white-link" href="#">home</a></li>
+                            </div>
+                            <div class="list-items">
+                                <li><a class="white-link" href="#">about us</a></li>
+                            </div>
+                            <div class="list-items">
+                                <li><a class="white-link" href="#">contact us</a></li>
+                            </div>
+                            <div class="list-items">
+                                <li><a class="white-link" href="#">countries</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <div class="container my-5">
+            <div class="card mx-auto mb-3" style="max-width: 700px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="staysafe.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="align-baseline text-30">stay safe and stay home & lets fight against corona virus
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-danger text-center my-5">COVID-19 statits:-</h3>
+                <div class="row text-18 my-2">
+                    <span>Total Confirmed</span><br>
+                    <span id="t-case">1,55,415</span>
+                </div>
+                <div class="row text-18 my-2">
+                    <span>New Confirmed</span><br>
+                    <span id="n-case">415</span>
+                </div>
+                <div class="row text-18 my-2">
+                    <span>Total Recovered</span><br>
+                    <span id="t-recover">55,415</span>
+                </div>
+                <div class="row text-18 my-2">
+                    <span>Total Deaths</span><br>
+                    <span id="t-death">100</span>
+                </div>
+            </div>
+            <div class="my-5">
+                <h3 class="text-danger text-center">what is COVID-19?</h3>
+                <p class="text-18">COVID-19 is dangrous virus founded in 90's but spreaded in 2019 its full form is
+                    CORONA VIRUS DISEASE 2019. in this virus people symptoms like cuaghing,sneezing,fever and breath
+                    problems. previously nly vacine is face mask and washing hands but today our countries founded
+                    vaccine in 2020.
+                </p>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="table-responsive">
+                <table class=" table-responsive table table-striped my-table">
+                    <thead id="fixed" class="table-dark">
+                        <tr>
+                            <th>country</th>
+                            <th>NewConfirmed</th>
+                            <th>totalConfirmed</th>
+                            <th>NewDeaths</th>
+                            <th>TotalDeaths</th>
+                            <th>NewRecovered</th>
+                            <th>TotalRecovered</th>
+                        </tr>
+                    </thead>
+                    <tbody id="new-row">
+                        <tr class="text-center table-success">
+                            <td>Afghanistan</td>
+                            <td>0</td>
+                            <td>55959</td>
+                            <td>0</td>
+                            <td>2454</td>
+                            <td>0</td>
+                            <td>49499</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center">
+                    <div id="my-spinner" class=" m-5" role="status"></div>
+                </div>
+                <div class="container text-25 text-center text-danger">
+                    <p id="error"></p>
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
